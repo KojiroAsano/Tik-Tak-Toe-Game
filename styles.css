@@ -1,0 +1,73 @@
+button {
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.game-board {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: #34495e;
+  color: rgb(204, 28, 28);
+  border: 3px solid black;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+.grid-row {
+  
+  
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 4em;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: rgb(175, 70, 70);
+}
+
+.block {
+  background-color: rgb(219, 28, 28);
+  border: 6px solid green;
+  border-radius: 6px;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 20em;
+}
+
+.red {
+  color: red;
+}
+
+.white {
+  color: green;
+}
+
+#title{
+  background-color: navy;
+  color: azure;
+}
+
+@keyframes changewidth {
+  from {
+    font-size: 30px;
+  }
+
+  to {
+    font-size: 50px;
+  }
+}
+
+.transition {
+  
+  color: red;
+  animation-duration: 1s;
+  animation-name: changewidth;
+  animation-iteration-count: infinite;
+}
+#info{
+  text-align: center;
+}
