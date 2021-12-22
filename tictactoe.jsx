@@ -44,8 +44,14 @@ const Board = () => {
       </div>
       <div className="col-5 m-3 container">
         <div id="info">
-          <h1 id="turn" className="my-5">{playerTurn}</h1>
-          {(status === "Winner is No Winner Yet!!" ?<h1></h1> : <h1 className="my-5 transition">{status}</h1>)}
+          <h1 id="turn" className="my-5">
+            {playerTurn}
+          </h1>
+          {status === "Winner is No Winner Yet!!" ? (
+            <h1></h1>
+          ) : (
+            <h1 className="my-5 transition">{status}</h1>
+          )}
         </div>
       </div>
     </div>
@@ -95,9 +101,11 @@ const Square = ({ takeTurn, id }) => {
       // Part 2: update the return statement below to add css classes
       className={tik == "1" ? "red" : "white"}
       onClick={() => {
-        setTik(takeTurn(id));
-        setFilled(true);
-        console.log(`Square: ${id} filled by player : ${tik}`);
+        if (filled === false) {
+          setTik(takeTurn(id));
+          setFilled(true);
+          console.log(`Square: ${id} filled by player : ${tik}`);
+        }
       }}
     >
       <h1>{mark[tik]}</h1>
