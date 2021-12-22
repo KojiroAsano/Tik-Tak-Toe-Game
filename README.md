@@ -41,7 +41,7 @@
   If any question, message me via **[my twitter](https://twitter.com/Kojiro38895598)**.
   
 ## Roadmap of Future Improvements
-  I would want to add the feature that if the player already fills in blank, the other player cannot fill in. 
+  I would want to add the feature that if the player already fills in blank, the other player cannot fill in. Done!!
   
 ## License information: 
  please include the name of ***MIT***.
