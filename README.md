@@ -45,4 +45,4 @@
   
 ## License information: 
  please include the name of ***MIT***.
- The image courtesy ***David McBee*** and retrieved from the [site](https://www.pexels.com/photo/bitcoins-and-u-s-dollar-bills-730547/).
+
